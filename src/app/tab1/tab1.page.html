@@ -1,17 +1,219 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Tab 1
+    <ion-title id="logotipo">
+      Instagram
     </ion-title>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon name="paper-plane"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon name="add"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon name="person-circle"></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <div id="historia">
+    <ion-slides>
+      <ion-slide class="ion-padding-vertical">
+        <ion-fab-button><img src="../../assets/images/user.png" alt=""></ion-fab-button>
+        <ion-fab-button><img src="../../assets/images/user.png" alt=""></ion-fab-button>
+        <ion-fab-button><img src="../../assets/images/user.png" alt=""></ion-fab-button>
+        <ion-fab-button><img src="../../assets/images/user.png" alt=""></ion-fab-button>
+        <ion-fab-button><img src="../../assets/images/user.png" alt=""></ion-fab-button>
+      </ion-slide>
+      <ion-slide class="ion-padding-vertical">
+        <ion-fab-button><img src="../../assets/images/user.png" alt=""></ion-fab-button>
+        <ion-fab-button><img src="../../assets/images/user.png" alt=""></ion-fab-button>
+        <ion-fab-button><img src="../../assets/images/user.png" alt=""></ion-fab-button>
+        <ion-fab-button><img src="../../assets/images/user.png" alt=""></ion-fab-button>
+        <ion-fab-button><img src="../../assets/images/user.png" alt=""></ion-fab-button>
+      </ion-slide>
+    </ion-slides>
+  </div>
+
+  <div id="publicacion">
+    <ion-card>
+      <ion-card-title>
+        <div id="barra-inicio">
+          <div id="usuario-img-name">
+          <ion-buttons slot="start">
+            <ion-fab-button size="small"><img src="../../assets/images/user.png" alt=""></ion-fab-button>
+          </ion-buttons>
+          <div id="user">
+            <p>user</p>
+          </div>
+          </div>
+  
+          <div>
+          <ion-buttons slot="end">
+            <ion-button><ion-icon name="ellipsis-vertical"></ion-icon></ion-button>
+          </ion-buttons>
+        </div>
+      </div>
+      </ion-card-title>
+
+      <ion-card-content>
+        <ion-slides pager="true">
+          <ion-slide><img src="../../assets/images/galaxia4.jpg" alt=""></ion-slide>
+          <ion-slide><img src="../../assets/images/galaxia3.jpg" alt=""></ion-slide>
+        </ion-slides>
+
+        <div id="options">
+
+          <div>
+          <ion-buttons slot="start">
+            <ion-button>
+              <ion-icon name="heart-outline"></ion-icon>
+            </ion-button>
+
+            <ion-button>
+              <ion-icon name="chatbubble-outline"></ion-icon>
+            </ion-button>
+
+            <ion-button>
+              <ion-icon name="paper-plane-outline"></ion-icon>
+            </ion-button>
+          </ion-buttons>
+        </div>
+
+        <div>
+          <ion-buttons slot="end">
+            <ion-button>
+              <ion-icon name="bookmark-outline"></ion-icon>
+            </ion-button>
+          </ion-buttons>
+        </div>
+
+        </div>
+
+        <div id="like-num">
+          <div id="corazon">
+            <ion-icon name="heart"></ion-icon>
+          </div>
+          <div>
+            <p>250 likes</p>
+          </div>
+        </div>
+
+        <div>
+          <p><b>user</b> Galaxy post</p>
+        </div>
+
+        <div id="comentario-ejemplo">
+          <div>
+          <ion-fab-button size="small"><img src="../../assets/images/user.png" alt=""></ion-fab-button>
+        </div>
+        <div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe fuga, eaque inventore ut dolorem, quae aliquid veniam commodi impedit quasi assumenda soluta error autem. Tenetur esse obcaecati dolorem possimus expedita.</p>
+        </div>
+        </div>
+
+        <div>
+          <ion-note id="comentarios">Ver los 300 comentarios</ion-note>
+        </div>
+        <div>
+          <ion-note id="fecha">8 de Noviembre</ion-note>
+        </div>
+
+      </ion-card-content>
+    </ion-card>
+  </div>
+
+  <div id="publicacion">
+    <ion-card>
+      <ion-card-title>
+        <div id="barra-inicio">
+          <div id="usuario-img-name">
+          <ion-buttons slot="start">
+            <ion-fab-button size="small"><img src="../../assets/images/user.png" alt=""></ion-fab-button>
+          </ion-buttons>
+          <div>
+            <ion-note>user</ion-note>
+          </div>
+          </div>
+  
+          <div>
+          <ion-buttons slot="end">
+            <ion-button><ion-icon name="ellipsis-vertical"></ion-icon></ion-button>
+          </ion-buttons>
+        </div>
+      </div>
+      </ion-card-title>
+
+      <ion-card-content>
+        <ion-slides pager="true">
+          <ion-slide><img src="../../assets/images/paisaje1.jfif" alt=""></ion-slide>
+          <ion-slide><img src="../../assets/images/paisaje2.jpg" alt=""></ion-slide>
+        </ion-slides>
+
+        <div id="options">
+
+          <div>
+          <ion-buttons slot="start">
+            <ion-button>
+              <ion-icon name="heart-outline"></ion-icon>
+            </ion-button>
+
+            <ion-button>
+              <ion-icon name="chatbubble-outline"></ion-icon>
+            </ion-button>
+
+            <ion-button>
+              <ion-icon name="paper-plane-outline"></ion-icon>
+            </ion-button>
+          </ion-buttons>
+        </div>
+
+        <div>
+          <ion-buttons slot="end">
+            <ion-button>
+              <ion-icon name="bookmark-outline"></ion-icon>
+            </ion-button>
+          </ion-buttons>
+        </div>
+
+        </div>
+
+        <div id="like-num">
+          <div id="corazon">
+            <ion-icon name="heart"></ion-icon>
+          </div>
+          <div>
+            <p>250 likes</p>
+          </div>
+        </div>
+
+        <div id="owner">
+          <p><b>user</b> Landscape post</p>
+        </div>
+
+        <div id="comentario-ejemplo">
+          <div>
+          <ion-fab-button size="small"><img src="../../assets/images/user.png" alt=""></ion-fab-button>
+        </div>
+        <div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe fuga, eaque inventore ut dolorem, quae aliquid veniam commodi impedit quasi assumenda soluta error autem. Tenetur esse obcaecati dolorem possimus expedita.</p>
+        </div>
+        </div>
+
+        <div>
+          <ion-note id="comentarios">Ver los 250 comentarios</ion-note>
+        </div>
+        <div>
+          <ion-note id="fecha">7 de Noviembre</ion-note>
+        </div>
+
+      </ion-card-content>
+    </ion-card>
+  </div>
 </ion-content>

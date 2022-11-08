@@ -1,6 +1,9 @@
 // Ionic Variables and Theming. For more info, please see:
 // http://ionicframework.com/docs/theming/
-
+@font-face {
+  font-family: 'Kolker';
+  src: url(../assets/fonts/KolkerBrush-Regular.ttf);
+}
 /** Ionic CSS Variables **/
 :root {
   /** primary **/

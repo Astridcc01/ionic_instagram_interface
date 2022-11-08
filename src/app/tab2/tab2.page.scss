@@ -1,0 +1,31 @@
+ion-checkbox {
+    --background: #ffffff;
+    --background-checked: #000000;
+    --border-color: #8f6eec;
+    --border-color-checked: #8f6eec;
+    --border-radius: 4px;
+    --border-style: solid;
+    --border-width: 1px;
+    --checkmark-color: #8f6eec;
+    --checkmark-width: 6px;
+    --size: 18px;
+    --transition: background-color 15ms linear;
+}
+
+ion-toggle {
+    --background: #ffffff;
+    --background-checked: #000000;
+    --border-radius: 4px;
+    --handle-background: #8f6eec;
+    --handle-background-checked: #8f6eec;
+    --handle-border-radius: 4px 4px 4px 4px;
+    --handle-box-shadow: 4px 0 2px 0
+    --handle-height: 10px
+    --handle-max-height: 12px
+    --handle-spacing: 2px
+    --handle-transition: background-color 15ms linear
+    --handle-width: 10px
+}
+ion-chip{
+    
+}

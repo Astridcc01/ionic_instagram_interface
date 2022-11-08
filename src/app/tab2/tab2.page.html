@@ -7,11 +7,93 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+  <ion-fab slot="fixed" vertical="bottom" horizontal="center">
+    <ion-fab-button>
+      <ion-icon name="share"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="top">
+      <ion-fab-button>
+        <ion-icon name="logo-twitter"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button>
+        <ion-icon name="logo-instagram"></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+    <ion-fab-list side="bottom">
+      <ion-fab-button>
+        <ion-icon name="logo-facebook"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button>
+        <ion-icon name="logo-linkedin"></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+    <ion-fab-list side="start">
+      <ion-fab-button>
+        <ion-icon name="logo-pinterest"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button>
+        <ion-icon name="logo-youtube"></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+    <ion-fab-list side="end">
+      <ion-fab-button>
+        <ion-icon name="logo-twitch"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button>
+        <ion-icon name="logo-github"></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+
+  <form action="">
+    <ion-item>
+      <ion-label position="floating">Número:</ion-label>
+      <ion-input type="number" clearInput></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Texto:</ion-label>
+      <ion-input type="text" placeholder="Pepe Flores"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="fixed">Email::</ion-label>
+      <ion-input type="email" value="example@gmail.com" clearInput></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="fixed">Color:</ion-label>
+      <ion-input type="color" clearInput></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Contraseña:</ion-label>
+      <ion-input type="password" clearInput></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Toggle</ion-label>
+      <ion-toggle slot="start"></ion-toggle>
+    </ion-item>
+    <ion-item>
+      <ion-label>Checked</ion-label>
+      <ion-checkbox slot="end"></ion-checkbox>
+    </ion-item>
+    <ion-item>
+      <ion-note>Soy una nota</ion-note>
+    </ion-item>
+    <ion-item>
+      <ion-chip>
+        <ion-icon name="moon"></ion-icon>
+        <ion-label>Soy chip 1</ion-label>
+      </ion-chip>
+      <ion-chip>
+        <ion-icon name="earth"></ion-icon>
+        <ion-label>Soy chip 2</ion-label>
+      </ion-chip>
+      <ion-chip>
+        <ion-icon name="star"></ion-icon>
+        <ion-label>Soy chip 3</ion-label>
+      </ion-chip>
+    </ion-item>
+    <ion-item>
+      <ion-datetime></ion-datetime>
+    </ion-item>
+  </form>
 </ion-content>
